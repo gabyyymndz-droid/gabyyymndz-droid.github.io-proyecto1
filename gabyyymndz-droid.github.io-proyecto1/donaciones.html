@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donaciones - Refugio Santa Tecla</title>
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos externa e independiente -->
+  <link rel="stylesheet" href="style/styledonaciones.css">
+</head>
+<body>
+
+  <!-- Barra de navegación estandarizada -->
+  <header class="site-header">
+    <nav class="barra-navegacion" aria-label="Navegación principal">
+      <ul class="menu-navegacion">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="perritos.html">Nuestros Perritos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="donaciones.html" class="activo">Donaciones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Encabezado con estética consistente -->
+  <section class="encabezado-perritos">
+    <h1>APOYA A NUESTRO REFUGIO</h1>
+    <p class="subtitulo-donaciones">Tu ayuda nos permite seguir rescatando, alimentando y sanando a perritos en situación de vulnerabilidad.</p>
+  </section>
+
+  <main class="contenedor-donaciones">
+    <div class="cuadricula-donaciones">
+
+      <!-- Tarjeta 1: Donación Económica con Métodos de Pago Unificados -->
+      <article class="tarjeta-info">
+        <header class="tarjeta-info-header">
+          <h2>DONACIÓN ECONÓMICA</h2>
+          <p class="lema-actividad">"Cada aporte financia tratamientos y comida diaria"</p>
+        </header>
+
+        <div class="tarjeta-imagen-wrap">
+          <img src="img/donacion-dinero.png" alt="Apoyo a la atención veterinaria de perritos" class="tarjeta-donacion-img">
+        </div>
+
+        <div class="tarjeta-info-body">
+          <p class="texto-descripcion">
+            Elige el monto con el que deseas apoyar y selecciona el canal bancario o digital de tu preferencia para realizar tu aporte directo.
+          </p>
+
+          <form id="form-donacion-dinero" class="form-donacion-unificado">
+            <div class="bloque-seccion-interna">
+              <h3>Monto sugerido (USD)</h3>
+              <div class="montos-predefinidos">
+                <button type="button" class="btn-monto" data-monto="1">$1</button>
+                <button type="button" class="btn-monto" data-monto="5">$5</button>
+                <button type="button" class="btn-monto activo" data-monto="10">$10</button>
+                <button type="button" class="btn-monto" data-monto="20">$20</button>
+              </div>
+
+              <div class="campo-grupo">
+                <label for="monto-deseado">O ingresa otro monto:</label>
+                <input type="number" id="monto-deseado" name="monto-deseado" min="1" step="0.01" value="10" placeholder="Ej. 25.00">
+              </div>
+            </div>
+
+            <div class="bloque-seccion-interna">
+              <h3>Selecciona tu método de pago</h3>
+              <div class="lista-radios">
+                <label class="opcion-radio" for="pago-tarjeta">
+                  <input type="radio" id="pago-tarjeta" name="metodo-pago" value="tarjeta" checked required>
+                  <span>Transferencia / Tarjeta Banco Agrícola</span>
+                </label>
+                
+                <label class="opcion-radio" for="pago-paypal">
+                  <input type="radio" id="pago-paypal" name="metodo-pago" value="paypal">
+                  <span>PayPal Internacional</span>
+                </label>
+
+                <label class="opcion-radio" for="pago-gofundme">
+                  <input type="radio" id="pago-gofundme" name="metodo-pago" value="gofundme">
+                  <span>Campaña GoFundMe</span>
+                </label>
+
+                <label class="opcion-radio" for="pago-bitcoin">
+                  <input type="radio" id="pago-bitcoin" name="metodo-pago" value="bitcoin">
+                  <span>Bitcoin (Billetera Chivo / Lightning)</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-accion">Procesar donación económica</button>
+          </form>
+
+          <p class="requisito-nota"> Todas las donaciones se destinan 100% a la alimentación, medicinas y cuidado de nuestros perritos.</p>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2: Donación de Artículos con Recepción y Ubicación Unificadas -->
+      <article class="tarjeta-info">
+        <header class="tarjeta-info-header">
+          <h2>DONACIÓN EN ESPECIE</h2>
+          <p class="lema-actividad">"Insumos que brindan comodidad, higiene y nutrición"</p>
+        </header>
+
+        <div class="tarjeta-imagen-wrap">
+          <img src="img/donacion-articulos.png" alt="Insumos y alimentos para perritos" class="tarjeta-donacion-img">
+        </div>
+
+        <div class="tarjeta-info-body">
+          <p class="texto-descripcion">
+            Recibimos donativos en especie directamente en nuestras instalaciones para cubrir las necesidades diarias de los peluditos.
+          </p>
+
+          <div class="bloque-seccion-interna">
+            <h3>Insumos prioritarios</h3>
+            <ul class="tags-horarios">
+              <li>Comida: Croquetas cachorro y adulto</li>
+              <li>Accesorios: Pecheras y correas</li>
+              <li>Medicamentos:
+                <ul>-Osteocarol</ul>
+                <ul>-Artitab</ul>
+                <ul>-Shotapen</ul>
+                <ul>-Clorfeniramina</ul>
+                <ul>-Viusid</ul>
+                <ul>-Petavit</ul>
+                <ul>-Vitaminas geriatricas</ul>
+              </li>
+              <li>Cuidado: Camitas, cobijas, shampoo, juguetes</li>
+              <li>Limpieza: Pads absorventes,, cubetas plásticas, bolsas para basura, toallitas húmedas</li>
+            </ul>
+          </div>
+
+          <div class="bloque-seccion-interna">
+            <h3>Punto de entrega y horarios</h3>
+            <div class="caja-entrega-resumen">
+              <p class="entrega-lugar"><strong>Lugar:</strong> Centro de Resguardo de Santa Tecla</p>
+              <p class="entrega-horario"><strong>Horarios:</strong> Lunes a Viernes (8:00 AM – 4:00 PM) | Sábados (9:00 AM – 12:00 MD)</p>
+            </div>
+            <a href="https://maps.app.goo.gl/vtKgPzYbwQFn2ME26?g_st=iw" target="_blank" rel="noopener" class="btn-accion">Ver ubicación en Google Maps</a>
+          </div>
+
+          <p class="requisito-nota">Contactaté con anticipación al refugio para que podamos salir a recibirte en la entrada.</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+    <footer class="site-footer">
+    <div class="footer-col">
+      <img class="footer-logo" src="img/logo.png" alt="Logo del Centro de Resguardo" width="80" height="80">
+      <p class="footer-title">Centro de Resguardo Santa Tecla</p>
+      <p>Rescate, cuidado y adopción responsable de perros sin hogar</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Enlaces del pie de página">
+      <h3>Enlaces</h3>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#mision">Nuestra misión</a></li>
+        <li><a href="perritos.html">Conoce a nuestros perritos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="index.html#como-llegar">Cómo llegar</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col">
+      <h3>Contacto</h3>
+      <address>
+        <p>Santa Tecla, La Libertad, El Salvador</p>
+        <p><a href="tel:+50379197119">7919-7119</a></p>
+        <p><a href="tel:+50371657419">7165-7419</a></p>
+        <p><a href="https://www.instagram.com/cr.santatecla2025/" target="_blank" rel="noopener">@cr.santatecla2025</a></p>
+      </address>
+    </div>
+
+    <p class="footer-copy">&copy; 2026 Centro de Resguardo Santa Tecla. </p>
+  </footer>
+
+
+  <script>
+    const ENLACES_PAGO = {
+      tarjeta:  "https://www.bancoagricola.com",
+      paypal:   "https://www.paypal.com",
+      gofundme: "https://www.gofundme.com",
+      bitcoin:  "https://chivowallet.com"
+    };
+
+    const botonesMonto = document.querySelectorAll(".btn-monto");
+    const inputMonto = document.getElementById("monto-deseado");
+
+    botonesMonto.forEach(btn => {
+      btn.addEventListener("click", () => {
+        botonesMonto.forEach(b => b.classList.remove("activo"));
+        btn.classList.add("activo");
+        inputMonto.value = btn.dataset.monto;
+      });
+    });
+
+    document.getElementById("form-donacion-dinero").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const elegido = document.querySelector('input[name="metodo-pago"]:checked');
+      if (elegido && ENLACES_PAGO[elegido.value]) {
+        window.open(ENLACES_PAGO[elegido.value], "_blank");
+      }
+    });
+  </script>
+
+</body>
+</html>

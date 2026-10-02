@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil y Registro - Refugio Santa Tecla</title>
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos vinculada -->
+  <link rel="stylesheet" href="style/styleusuario.css">
+</head>
+<body>
+
+  <!-- Barra de navegación estandarizada -->
+  <header class="site-header">
+    <nav class="barra-navegacion" aria-label="Navegación principal">
+      <ul class="menu-navegacion">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="perritos.html">Nuestros Perritos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Encabezado con franja azul institucional -->
+  <section class="encabezado-principal">
+    <p class="subtitulo-encabezado">Cada voluntario hace la diferencia en la vida de nuestros perritos.</p>
+  </section>
+
+  <!-- Contenedor Principal del Formulario -->
+  <main class="contenedor-perfil">
+
+    <section class="tarjeta-formulario" id="vista-usuario">
+      <header class="cabecera-form">
+        <h2>FICHA DE INSCRIPCIÓN</h2>
+        <p>Completa tus datos generales para coordinar tu cita y actividades en el refugio.</p>
+      </header>
+
+      <form id="form-datos-generales" class="formulario-registro">
+        
+        <div class="campo-grupo">
+          <label for="user-nombre-completo">Nombre Completo:</label>
+          <input type="text" id="user-nombre-completo" name="user-nombre-completo" placeholder="Ej. Gabriela Méndez" required>
+        </div>
+
+        <div class="fila-doble">
+          <div class="campo-grupo">
+            <label for="user-telefono">Teléfono de Contacto:</label>
+            <input type="tel" id="user-telefono" name="user-telefono" placeholder="Ej. 7000-0000" pattern="[0-9]{4}-?[0-9]{4}" required>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="user-dui">DUI (con guion):</label>
+            <input type="text" id="user-dui" name="user-dui" placeholder="00000000-0" pattern="[0-9]{8}-[0-9]" maxlength="10" required>
+          </div>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="user-area-ayuda">¿En qué área nos vas a apoyar?</label>
+          <select id="user-area-ayuda" name="user-area-ayuda" required>
+            <option value="" disabled selected>Selecciona un área...</option>
+            <option value="limpieza">Limpieza</option>
+            <option value="bano">Baño</option>
+            <option value="paseos">Paseos</option>
+          </select>
+        </div>
+
+        <div class="contenedor-acciones">
+          <button type="submit" class="boton-enviar">Agendar en Google Calendar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <img class="footer-logo" src="img/logo.png" alt="Logo del Centro de Resguardo" width="80" height="80">
+      <p class="footer-title">Centro de Resguardo Santa Tecla</p>
+      <p>Rescate, cuidado y adopción responsable de perros sin hogar</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Enlaces del pie de página">
+      <h3>Enlaces</h3>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#mision">Nuestra misión</a></li>
+        <li><a href="perritos.html">Conoce a nuestros perritos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="index.html#como-llegar">Cómo llegar</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col">
+      <h3>Contacto</h3>
+      <address>
+        <p>Santa Tecla, La Libertad, El Salvador</p>
+        <p><a href="tel:+50379197119">7919-7119</a></p>
+        <p><a href="tel:+50371657419">7165-7419</a></p>
+        <p><a href="https://www.instagram.com/cr.santatecla2025/" target="_blank" rel="noopener">@cr.santatecla2025</a></p>
+      </address>
+    </div>
+
+    <p class="footer-copy">&copy; 2026 Centro de Resguardo Santa Tecla.</p>
+  </footer>
+  
+  <!-- Script para armar la URL de Google Calendar con los datos seleccionados -->
+  <script>
+    const CALENDAR_URL = null;
+
+    document.getElementById("form-datos-generales").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let url = CALENDAR_URL;
+      if (!url) {
+        const selectArea = document.getElementById("user-area-ayuda");
+        const areaTexto = selectArea.options[selectArea.selectedIndex].text;
+
+        const detalles =
+          "Nombre: " + document.getElementById("user-nombre-completo").value +
+          "\nTeléfono: " + document.getElementById("user-telefono").value +
+          "\nDUI: " + document.getElementById("user-dui").value +
+          "\nÁrea de apoyo: " + areaTexto;
+
+        url = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+              "&text=" + encodeURIComponent("Voluntariado - Refugio Santa Tecla") +
+              "&details=" + encodeURIComponent(detalles);
+      }
+      window.open(url, "_blank");
+    });
+  </script>
+
+</body>
+</html>

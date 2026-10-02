@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conoce a nuestros perritos - Centro de Resguardo</title>
+  
+  <!-- Tipografías de Google Fonts: Archivo Black y Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Enlace a la hoja de estilo externa -->
+  <link rel="stylesheet" href="style/styleperritos.css">
+</head>
+<body>
+
+  <!-- Barra de navegación estandarizada -->
+  <header class="site-header">
+    <nav class="barra-navegacion" aria-label="Navegación principal">
+      <ul class="menu-navegacion">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="perritos.html" class="activo">Nuestros Perritos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Encabezado con título limpio en azul -->
+  <section class="encabezado-perritos">
+    <h1>¡CONOCE A NUESTROS PERRITOS!</h1>
+  </section>
+
+  <!-- Contenedor principal de la galería -->
+  <main class="contenedor-galeria">
+    <section class="cuadricula-perritos" aria-label="Galería de perritos">
+      
+      <!-- Tarjeta 1: Chelito -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-chelito" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-chelito" startOffset="50%" text-anchor="middle">CHELITO</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/chelito.png" alt="Fotografía de Chelito" class="foto-perro">
+        </div>
+        <a href="#historia-chelito" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 2: Goku -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-goku" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-goku" startOffset="50%" text-anchor="middle">GOKU</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/goku.png" alt="Fotografía de Goku" class="foto-perro">
+        </div>
+        <a href="#historia-goku" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 3: Candy -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-candy" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-candy" startOffset="50%" text-anchor="middle">CANDY</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/candy.png" alt="Fotografía de Candy" class="foto-perro">
+        </div>
+        <a href="#historia-candy" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 4: Gringa 1 -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-gringa1" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-gringa1" startOffset="50%" text-anchor="middle">GRINGA</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/gringa1.png" alt="Fotografía de Gringa" class="foto-perro">
+        </div>
+        <a href="#historia-gringa1" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 5: Gringa 2 -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-gringa2" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-gringa2" startOffset="50%" text-anchor="middle">GRINGA</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/gringa2.png" alt="Fotografía de Gringa" class="foto-perro">
+        </div>
+        <a href="#historia-gringa2" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 6: Kiara -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-kiara" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-kiara" startOffset="50%" text-anchor="middle">KIARA</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/kiara.png" alt="Fotografía de Kiara" class="foto-perro">
+        </div>
+        <a href="#historia-kiara" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 7: Bambie -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-bambie" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-bambie" startOffset="50%" text-anchor="middle">BAMBIE</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/bambie.png" alt="Fotografía de Bambie" class="foto-perro">
+        </div>
+        <a href="#historia-bambie" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 8: Roxana -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-roxana" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-roxana" startOffset="50%" text-anchor="middle">ROXANA</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/roxana.png" alt="Fotografía de Roxana" class="foto-perro">
+        </div>
+        <a href="#historia-roxana" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 9: Grecia -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-grecia" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-grecia" startOffset="50%" text-anchor="middle">GRECIA</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/grecia.png" alt="Fotografía de Grecia" class="foto-perro">
+        </div>
+        <a href="#historia-grecia" class="boton-historia">su historia</a>
+      </article>
+
+      <!-- Tarjeta 10: Sarami -->
+      <article class="tarjeta-perro">
+        <svg class="nombre-curvo" viewBox="0 0 300 100">
+          <path id="arco-sarami" d="M 25,85 A 135,70 0 0,1 275,85" fill="transparent" />
+          <text>
+            <textPath href="#arco-sarami" startOffset="50%" text-anchor="middle">SARAMI</textPath>
+          </text>
+        </svg>
+        <div class="escenario-foto">
+          <img src="img/polaroid.png" alt="Marco polaroid" class="foto-polaroid">
+          <img src="img/sarami.png" alt="Fotografía de Sarami" class="foto-perro">
+        </div>
+        <a href="#historia-sarami" class="boton-historia">su historia</a>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- MODALES DE HISTORIA (100% CSS, SIN JAVASCRIPT)            -->
+  <!-- ========================================================= -->
+
+  <!-- Modal Chelito -->
+  <div id="historia-chelito" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/chelito.png" alt="Chelito" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Chelito</h2>
+        <p>Chelito encuentra alegría en las cosas pequeñas: una voz suave, un paseo sin prisa y un lugar cómodo para descansar. En esta historia, aprende poco a poco que acercarse también puede traer momentos bonitos. Imaginamos para él un hogar paciente, donde cada pequeño paso sea celebrado y el cariño se construya a su ritmo.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Goku -->
+  <div id="historia-goku" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/goku.png" alt="Goku" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Goku</h2>
+        <p>Goku convierte una tarde cualquiera en una pequeña aventura. Una hoja que se mueve o un juguete nuevo despiertan su curiosidad. Después de explorar, también disfruta una pausa cerca de alguien. Comparte energía y descubre que volver a casa es lo mejor.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Candy -->
+  <div id="historia-candy" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/candy.png" alt="Candy" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Candy</h2>
+        <p>Candy tiene una manera delicada de entrar en una historia: primero observa y después se acerca con curiosidad. Una manta suave y rutinas tranquilas le dan toda la seguridad que necesita.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Gringa 1 -->
+  <div id="historia-gringa1" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/gringa1.png" alt="Gringa" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Gringa</h2>
+        <p>Gringa es dulce, atenta y la compañera perfecta para las tardes tranquilas. Comparte historia y vínculo con su hermana, disfrutando descubrir cada rincón a su propio ritmo con mucho cariño.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Gringa 2 -->
+  <div id="historia-gringa2" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/gringa2.png" alt="Gringa" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Gringa</h2>
+        <p>Gringa prefiere observar antes de acercarse y encuentra alegría en los paseos tranquilos. Comparte el apodo de 'Las Gringas' con su hermana, pero tiene una personalidad dulce y única.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Gringuita -->
+  <div id="historia-kiara" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/kiara.png" alt="Kiara" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Kiara</h2>
+        <p>Kiara es la curiosa y traviesa: se asoma a cada novedad y transforma un rincón en un lugar por explorar. Le encanta sentirse acompañada.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Bambie -->
+  <div id="historia-bambie" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/bambie.png" alt="Bambie" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Bambie</h2>
+        <p>Bambie inspira una historia de calma total. La imaginamos disfrutando del viento fresco de la tarde y de una compañía que respete sus tiempos.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Roxana -->
+  <div id="historia-roxana" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/roxana.png" alt="Roxana" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Roxana</h2>
+        <p>Roxana es una exploradora nata: un juguete escondido se convierte en su mayor tesoro del día. Aprende rápido cuando hay premios y cariño.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ModaL Grecia -->
+  <div id="historia-grecia" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/grecia.png" alt="Grecia" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Grecia</h2>
+        <p>Grecia da vida a momentos cálidos y hogareños. Le fascina recibir caricias en la cabeza y dormir siestas bajo el sol suave de la mañana.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Sarami -->
+  <div id="historia-sarami" class="modal-historia">
+    <div class="caja-modal">
+      <div class="foto-modal-contenedor">
+        <img src="img/sarami.png" alt="Sarami" class="foto-modal">
+      </div>
+      <div class="texto-modal">
+        <h2>Sarami</h2>
+        <p>Sarami tiene entusiasmo de sobra para descubrir senderos y aprender trucos nuevos. Espera una familia activa con quien jugar mucho.</p>
+        <a href="#" class="boton-cerrar-modal">Volver con la camada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página unificado -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <img class="footer-logo" src="img/logo.png" alt="Logo del Centro de Resguardo" width="80" height="80">
+      <p class="footer-title">Centro de Resguardo Santa Tecla</p>
+      <p>Rescate, cuidado y adopción responsable de perros sin hogar</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Enlaces del pie de página">
+      <h3>Enlaces</h3>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#mision">Nuestra misión</a></li>
+        <li><a href="perritos.html">Conoce a nuestros perritos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="index.html#como-llegar">Cómo llegar</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col">
+      <h3>Contacto</h3>
+      <address>
+        <p>Santa Tecla, La Libertad, El Salvador</p>
+        <p><a href="tel:+50379197119">7919-7119</a></p>
+        <p><a href="tel:+50371657419">7165-7419</a></p>
+        <p><a href="https://www.instagram.com/cr.santatecla2025/" target="_blank" rel="noopener">@cr.santatecla2025</a></p>
+      </address>
+    </div>
+
+    <p class="footer-copy">&copy; 2026 Centro de Resguardo Santa Tecla. </p>
+  </footer>
+</body>
+</html>

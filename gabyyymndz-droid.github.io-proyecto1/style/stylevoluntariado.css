@@ -1,0 +1,366 @@
+/* ==========================================================
+   RESETEO DEL MODELO DE CAJA
+   ========================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #242833;
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   BARRA DE NAVEGACIÓN GLOBAL
+   ========================================================== */
+.site-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.barra-navegacion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.menu-navegacion {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.menu-navegacion li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #242833;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.menu-navegacion li a:hover,
+.menu-navegacion li a.activo {
+  color: #00167a;
+  background-color: #f0f4ff;
+}
+
+/* ==========================================================
+   ENCABEZADO DE PÁGINA
+   ========================================================== */
+.encabezado-perritos {
+  width: 100%;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.encabezado-perritos h1 {
+  font-family: 'Archivo Black', Arial, sans-serif;
+  color: #00167a;
+  font-size: 42px;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.subtitulo-voluntariado {
+  font-size: 1.05rem;
+  color: #505664;
+  margin-top: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================
+   GALERÍA / TARJETAS DE VOLUNTARIADO (CSS GRID)
+   ========================================================== */
+.contenedor-galeria {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
+
+.cuadricula-voluntariados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.tarjeta-info {
+  background-color: #ffffff;
+  border: 1px solid #d9dce5;
+  border-radius: 18px;
+  overflow: hidden; /* Ajusta la cabecera azul a las esquinas redondeadas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: none; /* Sin sombras */
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta-info:hover {
+  transform: translateY(-3px);
+  border-color: #00167a;
+  box-shadow: none; /* Cero sombras en hover */
+}
+
+/* Cabecera azul con texto blanco */
+.tarjeta-info-header {
+  background-color: #00167a;
+  color: #ffffff;
+  padding: 24px 20px;
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.tarjeta-info-header h2 {
+  font-family: 'Archivo Black', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1.3;
+}
+
+.tarjeta-info-header .lema-actividad {
+  font-style: italic;
+  font-size: 13px;
+  color: #cbd5e1;
+  margin-top: 6px;
+}
+
+/* Contenedor de imagen entre título y descripción */
+.tarjeta-imagen-wrap {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+}
+
+.tarjeta-voluntariado-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Cuerpo de la tarjeta */
+.tarjeta-info-body {
+  padding: 22px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.texto-descripcion {
+  font-size: 14px;
+  color: #505664;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  min-height: 90px;
+}
+.bloque-horario-box{
+  margin-bottom: 20px;
+}
+.bloque-horario-box h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #00167a;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.tags-horarios {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.tags-horarios li {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #00167a;
+}
+
+.requisito-nota {
+  margin-top: auto;
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 14px;
+}
+
+/* ==========================================================
+   BOTÓN PÍLDORA (SIN SOMBRAS)
+   ========================================================== */
+.fila-cta-voluntariado {
+  text-align: center;
+  padding: 10px 0 30px;
+}
+
+.boton-historia {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #00167a;
+  text-decoration: none;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  display: inline-block;
+  box-shadow: none; /* Sin sombra */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.boton-historia:hover {
+  background-color: #102b9a;
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
+.boton-cta-grande {
+  padding: 14px 40px;
+  font-size: 15px;
+}
+
+/* ==========================================================
+   PIE DE PÁGINA (CSS Grid - 3 Columnas)
+   ========================================================== */
+.site-footer {
+  background-color: #00167a;
+  color: #f8fafc;
+  padding: 4rem 1.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr;
+  max-width: 100%;
+  gap: 3rem 2rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 150px;
+  height: 150px;           /* Mismo alto y ancho */
+  border-radius: 50%;     /* Corta las 4 esquinas blancas y lo deja redondo */
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: #ffffff; /* Mantiene blanco solo el interior del círculo */
+}
+
+.footer-title {
+  font-family: 'Archivo Black', Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col p {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-col h3 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-col a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+  padding-left: 4px;
+}
+
+.footer-col address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* ==========================================================
+   MEDIA QUERIES (RESPONSIVE)
+   ========================================================== */
+@media (max-width: 950px) {
+  .cuadricula-voluntariados {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-navegacion {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .encabezado-perritos h1 {
+    font-size: 32px;
+  }
+
+  .boton-historia {
+    width: 100%;
+  }
+}
